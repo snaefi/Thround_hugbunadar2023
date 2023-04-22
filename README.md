@@ -9,3 +9,5 @@ sem dæmi þarf að breyta slóðinni
 C:\Users\snæfríður\IdeaProjects\Flugverkefni\src\main\files\logo.jpg 
 í 
 [youpath]\Flugverkefni\src\main\files\logo.jpg
+
+Slóðunum sem þarf að breyta eru eingöngu í FlightApplication og FlightController
