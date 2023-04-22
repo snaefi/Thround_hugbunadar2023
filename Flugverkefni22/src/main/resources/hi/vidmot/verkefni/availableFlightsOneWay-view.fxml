@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="150.0" minWidth="-Infinity" prefHeight="150.0" prefWidth="830.0" style="-fx-background-color: #a6dbf7; -fx-border-color: #363739; -fx-border-radius: 5; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hi.vidmot.verkefni.controller.DisplayFlightsController">
+   <children>
+      <HBox minHeight="150.0" prefHeight="150.0" prefWidth="830.0">
+         <children>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="fxAirlaneLogoImage" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="40.0" top="40.0" />
+                     </GridPane.margin>
+                  </HBox>
+               </children>
+            </GridPane>
+            <GridPane minHeight="141.0" prefHeight="147.0" prefWidth="100.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+               <children>
+                  <Text fx:id="fxFlightDepartureTime" fill="#363739" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="fxFlightDepartureAirportCode" fill="#363739" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </GridPane>
+            <GridPane minHeight="150.0" prefHeight="150.0" prefWidth="239.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="250.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Line endX="-100.82843017578125" endY="166.7928924560547" startX="58.46446228027344" startY="167.1568603515625" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="-10.0" right="-10.0" />
+                     </GridPane.margin></Line>
+                  <ImageView fx:id="fxTakeOffImage" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@../../../../files/taking_off.jpg" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="-50.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fx:id="fxLandingImage" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <image>
+                         <Image url="@../../../../files/plane_landing.jpg" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets right="-50.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <Text fx:id="fxFlightDuration" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="-10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text fx:id="fxFlightNumber" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="-10.0" />
+                     </GridPane.margin>
+                  </Text>
+               </children>
+            </GridPane>
+            <GridPane prefHeight="147.0" prefWidth="100.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="74.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="143.0" minHeight="10.0" prefHeight="76.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Text fx:id="fxFlightArrivalTime" fill="#363739" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="fxFlightArrivalAirportCode" fill="#363739" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+            </GridPane>
+            <Line endX="-100.82843017578125" endY="110.0" startX="-100.0">
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+            </Line>
+            <AnchorPane fx:id="fxRadioButtonAnchorPane" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <GridPane prefHeight="110.0" prefWidth="178.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="104.0" minHeight="10.0" prefHeight="35.5" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="104.0" minHeight="10.0" prefHeight="32.5" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text fx:id="fxFlightPerPersonPrice" fill="#363739" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                        </Text>
+                        <Text fx:id="fxFlightTotalPrice" fill="#363739" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Text>
+                        <Text fill="#363739" strokeType="OUTSIDE" strokeWidth="0.0" text="kr." textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="-14.0" />
+                           </GridPane.margin>
+                        </Text>
+                        <Text fill="#363739" strokeType="OUTSIDE" strokeWidth="0.0" text="kr. samtals" textAlignment="CENTER" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Text>
+                     </children>
+                  </GridPane>
+                  <RadioButton fx:id="fxChosenFlight" layoutX="54.0" layoutY="113.0" mnemonicParsing="false" selected="false" text="Velja flug" textFill="#363739">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

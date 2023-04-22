@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="fxPassengerAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="150.0" minWidth="-Infinity" prefHeight="323.0" prefWidth="554.0" style="-fx-background-color: #a6dbf7; -fx-border-color: #363739; -fx-border-radius: 5; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hi.vidmot.verkefni.controller.PassengerViewController">
+   <children>
+      <GridPane layoutX="47.0" layoutY="28.0" prefHeight="30.0" prefWidth="498.0" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="26.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="124.0" minWidth="10.0" prefWidth="76.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="169.0" minWidth="20.0" prefWidth="26.5" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="20.0" prefWidth="395.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text fill="#363739" strokeType="OUTSIDE" strokeWidth="0.0" text="Farþegi">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="fxPassengerNumber" fill="#363739" strokeType="OUTSIDE" strokeWidth="0.0" text="1" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </Text>
+            <Text fx:id="fxContactPassenger" fill="#363739" strokeType="OUTSIDE" strokeWidth="0.0" text="-  Umsjónarmaður bókunar" wrappingWidth="400.919921875" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </GridPane>
+      <GridPane fx:id="fxPassengerGridPane" alignment="center" hgap="10" layoutX="56.0" layoutY="69.0" prefHeight="171.0" prefWidth="398.0" vgap="10" AnchorPane.topAnchor="67.0">
+         <children>
+            <Label text="Fornafn" textFill="#363739" GridPane.columnIndex="0" GridPane.rowIndex="0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fxFirstNameTextField" GridPane.columnIndex="1" GridPane.rowIndex="0">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <Label text="Eftirnafn" textFill="#363739" GridPane.columnIndex="0" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fxLastNameTextField" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <Label text="Vegabréfsnúmer" textFill="#363739" GridPane.columnIndex="0" GridPane.rowIndex="2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fxPassportTextField" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label fx:id="fxPhoneLabel" text="Sími" textFill="#363739" GridPane.columnIndex="0" GridPane.rowIndex="3">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fxPhoneTextField" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <Label fx:id="fxEmailLabel" text="Tölvupóstur" textFill="#363739" GridPane.columnIndex="0" GridPane.rowIndex="4">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fxEmailTextField" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints minWidth="130.0" prefWidth="130.0" />
+            <ColumnConstraints maxWidth="230.0" minWidth="230.0" prefWidth="230.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+      <Button fx:id="fxAddPassengerButton" layoutX="473.0" layoutY="274.0" mnemonicParsing="false" onAction="#confirmPassengerInput" prefHeight="30.0" prefWidth="67.0" text="Skrá">
+         <font>
+            <Font name="Century Schoolbook" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
